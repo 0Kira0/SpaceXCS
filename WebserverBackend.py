@@ -99,7 +99,7 @@ def launchdetails():
     for payload in json_Payload:
         payloadDict[payload["id"]] = payload["name"]
         
-    for rockets in json_rockets:
+    for rockets in json_Rockets:
         rocketsDict[rockets["id"]] = rockets["rocket_name"]
     
 
