@@ -98,12 +98,18 @@ def launchdetails():
 
     for payload in json_Payload:
         payloadDict[payload["id"]] = payload["name"]
+        
+    for rockets in json_rockets:
+        rocketsDict[rockets["id"]] = rockets["rocket_name"]
 
     print (payloadDict[json_Upcoming[0]["payloads"][0]])
     print (launchpadDict[json_Upcoming[0]["launchpad"]])
+    print (rocketsDict[json_Upcoming[0]["rockets"]])
 
     details_string = "Payload: " + payloadDict[json_Upcoming[0]["payloads"][0]] + "<br>" + "LaunchPad: "  + launchpadDict[json_Upcoming[0]["launchpad"]]
-
+    details_string = "Rockets: " + rocketsDict(json_Latest["rockets"]) + "<br>" + Launch Site: " + launchpadDict(json_Latest[launchpad"]) + "<br>" + "Launch Vechicle: " + Rockets(json_Latest[rocket"]) + "<br>" + Payload: " + payloadDict(json_Latest["payloads"]) + "name:"
+    + "<br>" + " Launch Site: " + launchpadDict(json_Latest["launchpads"]["full_name"]) + "<br>" + " Launch Vechicle: " + rocketsDict(json_Latest["rockets"]["rocket_name"]) + "<br>" + " Payload: " + rocketsDict(json_Latest["rocket"]["second_stage"]["payloads"][0] [payload_type]) + "<br>" "name: " + rocketsDict(json_Latest["rocket"][second_stage"]["payloads"][0]["payload_id"] + "<br>" + "Mass: " + rocketsDict(json_Latest["rocket"]["second_stage"]["payloads"][0]["payload_mass_kg"]) + "kg" + "<br>" + "Manufacturer: " + rocketsDict(json_Latest["rocket"]["second_stage"]["payloads"][0]["manufacturer]) + "<br>" + "Orbit: " + rocketDict(json_Latest["rocket"]["second_stage"]["payloads"][0]["orbit"]))
+    details_string = "launchpad: " + launchpadDict(json_Latest["launchpad"]) + "<br> + launchpadDict(json_Latest[latest"])
 
     #details_string = "Mission Name: " + str(json_Latest["name"]) + "<br>" + "Launch Site: " + str(json_Latest["launchpad"]) + "<br>" + "Launch Vechicle: " + str(json_Latest["rocket"]) + "<br>" + " Payload: " + str(json_Latest["payloads"]) + "Payloads Name: "
 
